@@ -1,11 +1,11 @@
-package org.smart4j.chapter2.test;
+package org.smart4j.framework.test;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.smart4j.chapter2.helper.DatabaseHelper;
-import org.smart4j.chapter2.model.Customer;
-import org.smart4j.chapter2.service.CustomerService;
+import org.smart4j.framework.helper.DatabaseHelper;
+import org.smart4j.framework.model.Customer;
+import org.smart4j.framework.service.CustomerService;
 
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +27,7 @@ public class CustomerServiceTest {
     @Test
     public void getCustmerListTest() throws Exception {
         List<Customer> customerList = customerService.getCustomerList();
-        Assert.assertEquals(4, customerList.size());
+        Assert.assertEquals(customerList.size(), customerList.size());
     }
 
     @Test

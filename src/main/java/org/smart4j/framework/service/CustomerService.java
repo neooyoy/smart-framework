@@ -1,9 +1,9 @@
-package org.smart4j.chapter2.service;
+package org.smart4j.framework.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smart4j.chapter2.helper.DatabaseHelper;
-import org.smart4j.chapter2.model.Customer;
+import org.smart4j.framework.helper.DatabaseHelper;
+import org.smart4j.framework.model.Customer;
 
 import java.util.List;
 import java.util.Map;

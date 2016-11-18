@@ -8,7 +8,7 @@
     <artifactId>smart4j-framework</artifactId>
     <version>1.0.0</version>
 
-    <packaging>jar</packaging>
+    <!--<packaging>jar</packaging>-->
 
     <dependencies>
         <!--Servlet-->

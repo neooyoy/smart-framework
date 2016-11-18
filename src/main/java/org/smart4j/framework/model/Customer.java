@@ -1,4 +1,4 @@
-package org.smart4j.chapter2.model;
+package org.smart4j.framework.model;
 
 public class Customer {
 
