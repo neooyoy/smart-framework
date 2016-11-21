@@ -19,4 +19,8 @@ public class Data {
     public Object getModel() {
         return model;
     }
+
+    public void setModel(Object model) {
+        this.model = model;
+    }
 }

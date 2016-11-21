@@ -36,4 +36,7 @@ public class View {
         return model;
     }
 
+    public void setPath(String path) {
+        this.path = path;
+    }
 }
