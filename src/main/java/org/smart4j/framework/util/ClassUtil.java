@@ -3,8 +3,6 @@ package org.smart4j.framework.util;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.org.mozilla.javascript.internal.ast.Name;
-
 import java.io.File;
 import java.io.FileFilter;
 import java.net.JarURLConnection;
@@ -36,6 +34,16 @@ public final class ClassUtil {
 
     /**
      * 加载类
+     *
+     * @param className
+     * @return
+     */
+    public static Class<?> loadClass(String className) {
+       return loadClass(className, false);
+    }
+
+    /**
+     * 加载类
      * 需要提供类名与是否初始化的标志，这里提到的初始化指是否执行类的静态代码块
      *
      * @param className
@@ -56,6 +64,7 @@ public final class ClassUtil {
     /**
      * 获取指定包下的所有类
      * 需要根据包名并将其转换为文件路径，读取class文件或jar包，获取指定的类名去加载类
+     *
      * @param packageName
      * @return
      */
@@ -71,7 +80,7 @@ public final class ClassUtil {
                         String packagePath = url.getPath().replaceAll("%20", " ");
                         addClass(classSet, packagePath, packageName);
                     } else if (protocol.equals("jar")) {
-                        JarURLConnection jarURLConnection = (JarURLConnection)url.openConnection();
+                        JarURLConnection jarURLConnection = (JarURLConnection) url.openConnection();
                         if (jarURLConnection != null) {
                             JarFile jarFile = jarURLConnection.getJarFile();
                             if (jarFile != null) {
@@ -130,5 +139,9 @@ public final class ClassUtil {
         classSet.add(cls);
     }
 
-
+    //test
+    /*public static void main(String[] args) {
+        Set<Class<?>> classes = getClassSet("org.smart4j.framework");
+        System.out.println(classes);
+    }*/
 }

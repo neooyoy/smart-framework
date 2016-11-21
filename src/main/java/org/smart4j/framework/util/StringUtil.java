@@ -7,11 +7,16 @@ public final class StringUtil {
         if (str != null) {
             str = str.trim();
         }
+        StringUtils.split("daf", "&");
         return StringUtils.isEmpty(str);
     }
 
     public static boolean isNotEmpty(String str) {
         return !isEmpty(str);
+    }
+
+    public static String[] splitString(final String str, final String separatorChars) {
+        return StringUtils.split(str, separatorChars);
     }
 
 }
