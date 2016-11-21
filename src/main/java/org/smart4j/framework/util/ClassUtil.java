@@ -39,7 +39,7 @@ public final class ClassUtil {
      * @return
      */
     public static Class<?> loadClass(String className) {
-       return loadClass(className, false);
+       return loadClass(className, true);
     }
 
     /**
