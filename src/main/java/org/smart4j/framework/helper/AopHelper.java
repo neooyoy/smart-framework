@@ -1,6 +1,5 @@
 package org.smart4j.framework.helper;
 
-import com.sun.scenario.effect.impl.prism.PrMergePeer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.framework.annotation.Aspect;
@@ -8,7 +7,6 @@ import org.smart4j.framework.proxy.AspectProxy;
 import org.smart4j.framework.proxy.Proxy;
 import org.smart4j.framework.proxy.ProxyManager;
 
-import java.awt.*;
 import java.lang.annotation.Annotation;
 import java.util.*;
 import java.util.List;
