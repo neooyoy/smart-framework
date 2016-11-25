@@ -97,5 +97,12 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.4.4</version>
         </dependency>
+
+        <!--cglig-->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>2.2.2</version>
+        </dependency>
     </dependencies>
 </project>
